@@ -11,6 +11,7 @@ class RepositoriesModel with _$RepositoriesModel {
     required int forks_count,
     required int stargazers_count,
     required int watchers_count,
+    required Map<String, dynamic> owner,
   }) = _RepositoriesModel;
 
   factory RepositoriesModel.fromJson(Map<String, dynamic> json) =>

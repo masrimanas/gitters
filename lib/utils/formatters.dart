@@ -1,6 +1,11 @@
 import 'package:gitters/features/search/data/models/github_user.dart';
 import 'package:gitters/features/search/data/models/issue.dart';
 import 'package:gitters/features/search/data/models/repositories.dart';
+import 'package:intl/intl.dart';
+
+String dateFormatter(DateTime time) {
+  return DateFormat.yMd().format(time);
+}
 
 List<GithubUserModel> userToList(Map<String, dynamic> data) {
   return List<GithubUserModel>.from(

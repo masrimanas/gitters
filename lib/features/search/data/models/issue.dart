@@ -9,6 +9,7 @@ class IssueModel with _$IssueModel {
     required String title,
     required DateTime updated_at,
     required String state,
+    required Map<String, dynamic> user,
   }) = _IssueModel;
 
   factory IssueModel.fromJson(Map<String, dynamic> json) =>

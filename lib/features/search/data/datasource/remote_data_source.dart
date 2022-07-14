@@ -1,6 +1,6 @@
 import 'package:gitters/services/api_service.dart';
-import 'package:gitters/utils/convert_to_list.dart';
 import 'package:gitters/utils/exception.dart';
+import 'package:gitters/utils/formatters.dart';
 
 abstract class RemoteDataSource {
   const RemoteDataSource(

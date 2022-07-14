@@ -16,14 +16,14 @@ class PaginationList extends StatelessWidget {
       removeTop: true,
       child: ListView.builder(
         shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
+        // physics: const NeverScrollableScrollPhysics(),
         itemCount: items.length,
         itemBuilder: (context, index) {
           final data = items;
           return data[index].map(
-            users: (value) => SearchItemView(item: data.first),
-            issues: (value) => SearchItemView(item: data.first),
-            repositories: (value) => SearchItemView(item: data.first),
+            users: (value) => SearchItemView(item: data[index]),
+            issues: (value) => SearchItemView(item: data[index]),
+            repositories: (value) => SearchItemView(item: data[index]),
           );
         },
       ),

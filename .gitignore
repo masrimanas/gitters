@@ -131,5 +131,3 @@ app.*.map.json
 .github
 .idea
 .metadata
-*.freezed.dart
-*.g.dart

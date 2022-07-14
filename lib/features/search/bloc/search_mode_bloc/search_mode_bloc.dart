@@ -7,7 +7,8 @@ part 'search_mode_event.dart';
 part 'search_mode_state.dart';
 
 class SearchModeBloc extends Bloc<SearchModeEvent, SearchModeState> {
-  SearchModeBloc() : super(const SearchModeState.initial()) {
+  SearchModeBloc()
+      : super(const SearchModeState.mode(mode: SearchModeOption.lazyLoaded)) {
     on<SearchModeEventChangeMode>((event, emit) {
       emit(SearchModeState.mode(mode: event.mode));
     });
